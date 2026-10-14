@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html  >
 <head>
+ 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
@@ -18,7 +19,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=HwgrDS"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=HwgrDS" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=k0QOdH"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=k0QOdH" type="text/css">
 
   
   
@@ -26,7 +27,7 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu2 cid-vwGal7kbzt" once="menu" id="menu2-0">
+  <section data-bs-version="5.1" class="menu menu2 cid-vxZKtP4vBM" once="menu" id="menu2-7">
     
     <nav class="navbar navbar-dropdown navbar-expand-lg">
         <div class="container">
@@ -34,7 +35,7 @@
                 
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="http://techttc.com/portfolio">Carter Tappan</a></span>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -45,8 +46,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://techttc.com/portfolio">About</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://techttc.com/portfolio/projects">Project Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://techttc.com/portfolio/resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://techttc.com/portfolio/contact">Contact</a>
-                    </li></ul>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://techttc.com/photography">Photography Portfolio</a>
+                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="http://techttc.com/portfolio/contact">Contact</a></li></ul>
                 
                 
             </div>
@@ -182,7 +183,7 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer3 cid-vwGdM9DyVh" once="footers" id="footer3-5">
+<section data-bs-version="5.1" class="footer3 cid-vxZKtuOxFD mbr-reveal" once="footers" id="footer3-6">
 
     
 
@@ -197,7 +198,7 @@
                     
                     
                     
-                <li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio" class="text-white text-primary">Home</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio/projects" class="text-white">Project Porfolio</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio/resume" class="text-white text-primary">Resume</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio/contact" class="text-white">Contact</a></li></ul>
+                <li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio" class="text-white text-primary">Home</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio/projects" class="text-white">Project Porfolio</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio/resume" class="text-white text-primary">Resume</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/photography" class="text-white">Photography Portfolio</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://techttc.com/portfolio/contact" class="text-white">Contact</a></li></ul>
             </div>
             <div class="row social-row">
                 <div class="social-list align-right pb-2">
@@ -220,9 +221,34 @@
     </div>
 </section>
   
-  
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-    <input name="animation" type="hidden">
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script>
+    (function () {
+      const toggle = document.querySelector('.navbar-toggler');
+      const menu = document.querySelector('#navbarSupportedContent');
+      if (!toggle || !menu) return;
+
+      const setMenuState = function (isOpen) {
+        menu.classList.toggle('show', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.classList.toggle('collapsed', !isOpen);
+      };
+
+      toggle.addEventListener('click', function () {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        setMenuState(!isOpen);
+      });
+
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (window.innerWidth < 992) {
+            setMenuState(false);
+          }
+        });
+      });
+    })();
+  </script>
+  <input name="animation" type="hidden">
   </body>
 </html>
