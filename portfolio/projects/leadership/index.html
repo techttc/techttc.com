@@ -188,14 +188,20 @@
         </div>
     </div>
 </section>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script>
     (function () {
       const toggle = document.querySelector('.navbar-toggler');
       const menu = document.querySelector('#navbarSupportedContent');
       if (!toggle || !menu) return;
 
+      menu.classList.add('collapse');
+      menu.classList.remove('show');
+
       const setMenuState = function (isOpen) {
         menu.classList.toggle('show', isOpen);
+        menu.classList.toggle('collapse', !isOpen);
         toggle.setAttribute('aria-expanded', String(isOpen));
         toggle.classList.toggle('collapsed', !isOpen);
       };
