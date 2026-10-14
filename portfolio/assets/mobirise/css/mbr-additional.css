@@ -1176,6 +1176,9 @@ a {
 .cid-sFCygHrmNf .row .row-copirayt p {
   width: 100%;
 }
+.cid-sFCygHrmNf foot-menu-item {
+  text-align: right;
+}
 .cid-vwFIzrhYUX .navbar-dropdown {
   position: relative !important;
 }
@@ -1733,4 +1736,7 @@ a {
 }
 .cid-vwFIzrB1uW .row .row-copirayt p {
   width: 100%;
+}
+.cid-vwFIzrB1uW foot-menu-item {
+  text-align: right;
 }
